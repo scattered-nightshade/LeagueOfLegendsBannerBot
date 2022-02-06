@@ -10,10 +10,9 @@ const client = new Client({
 require('dotenv').config();
 
 client.on('presenceUpdate', async (oldPresence, newPresence) => {
-    const game = newPresence.presence.game;
-    game.name = game.name.toString().toLowerCase();
+    const game = newPresence.activities.name.toString().toLowerCase();
 
-    if (game.name === 'league of legends'){
+    if (game === 'league of legends'){
         await newPresence.member.send('You have kinda been lacking, you\'ve been banned for playing League Of Legends');
         await newPresence.member.ban({ reason: 'They tried to play league of legends'})
     }
