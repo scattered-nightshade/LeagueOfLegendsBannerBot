@@ -12,7 +12,7 @@
     "url": "git+https://github.com/PWalkersCrisps/LeagueOfLegendsBannerBot.git"
   },
   "author": "PWalkersCrisps",
-  "license": "GPL-3.0-or-later",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/PWalkersCrisps/LeagueOfLegendsBannerBot/issues"
   },
