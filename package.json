@@ -4,20 +4,23 @@
   "description": "A bot that specifically bans anyone who plays leagueoflegends for a period of time",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PWalkersCrisps/LeagueOfLegendsBannerBot.git"
   },
   "author": "PWalkersCrisps",
-  "license": "ISC",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/PWalkersCrisps/LeagueOfLegendsBannerBot/issues"
   },
   "homepage": "https://github.com/PWalkersCrisps/LeagueOfLegendsBannerBot#readme",
   "dependencies": {
-    "discord.js": "^13.6.0",
-    "dotenv": "^16.0.0"
+    "discord.js": "^14.1.2",
+    "dotenv": "^16.0.1",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
   }
 }
