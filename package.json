@@ -1,26 +1,34 @@
 {
   "name": "leagueoflegendsbannerbot",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A bot that specifically bans anyone who plays leagueoflegends for a period of time",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./src/index.js"
+    "lint": "eslint . --ext .ts",
+    "clean": "rm -rf build",
+    "clean-build": "npm run clean && npm run build",
+    "build": "tsc",
+    "start": "node ./build/index.js",
+    "prestart": "npm run clean-build",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PWalkersCrisps/LeagueOfLegendsBannerBot.git"
+    "url": "git+https://github.com/scattered-nightshade/LeagueOfLegendsBannerBot.git"
   },
-  "author": "PWalkersCrisps",
+  "author": "Nightshade",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PWalkersCrisps/LeagueOfLegendsBannerBot/issues"
+    "url": "https://github.com/scattered-nightshade/LeagueOfLegendsBannerBot/issues"
   },
-  "homepage": "https://github.com/PWalkersCrisps/LeagueOfLegendsBannerBot#readme",
+  "homepage": "https://github.com/scattered-nightshade/LeagueOfLegendsBannerBot#readme",
   "dependencies": {
-    "discord.js": "^14.1.2",
-    "dotenv": "^16.0.1",
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7",
     "fs": "^0.0.1-security",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
   }
 }
